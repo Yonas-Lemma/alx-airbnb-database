@@ -1,4 +1,5 @@
--- Initial query to retrieve all bookings along with user details, property details, and payment details
+-- Analyze the performance of the initial query using EXPLAIN
+EXPLAIN ANALYZE 
 SELECT 
     b.booking_id,
     b.start_date,
@@ -21,4 +22,7 @@ JOIN
 JOIN 
     Property p ON b.property_id = p.property_id
 LEFT JOIN 
-    Payment pay ON b.booking_id = pay.booking_id;
+    Payment pay ON b.booking_id = pay.booking_id
+WHERE 
+    b.start_date >= '2025-01-01'  -- Example condition to filter bookings
+    AND b.end_date <= '2025-12-31';  -- Example condition to filter bookings
