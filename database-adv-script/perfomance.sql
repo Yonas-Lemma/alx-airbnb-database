@@ -13,8 +13,7 @@ SELECT
     p.location,
     pay.payment_id,
     pay.amount AS payment_amount,
-    pay.payment_date,
-    pay.payment_method
+    pay.payment_date
 FROM 
     Booking b
 JOIN 
