@@ -32,3 +32,20 @@ To execute the queries, run the `subqueries.sql` file in your SQL database manag
 ```sql
 -- Example command to run the subqueries script
 \i path/to/subqueries.sql
+
+# SQL Aggregations and Window Functions
+
+This repository contains SQL scripts demonstrating the use of aggregation and window functions to analyze data.
+
+## Queries
+
+1. **Total Bookings by Each User**: Finds the total number of bookings made by each user using the COUNT function and GROUP BY clause.
+2. **Ranking Properties**: Ranks properties based on the total number of bookings they have received using the RANK window function.
+
+## Usage
+
+To execute the queries, run the `aggregations_and_window_functions.sql` file in your SQL database management system (e.g., PostgreSQL, MySQL).
+
+```sql
+-- Example command to run the aggregations and window functions script
+\i path/to/aggregations_and_window_functions.sql
